@@ -85,7 +85,7 @@ var letterProbabilities = [Character: Float]()
 for (letter, count) in letterCounts {
     
     //Add an entry to the probabilites dictionary
-    letterProbabilities[letter] = Float[count] / Float(input.characters.count) * 100
+    letterProbabilities[letter] = Float(count) / Float(input.characters.count) * 100
 }
 
 letterProbabilities
